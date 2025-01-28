@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webcake</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Deducción de costos</h1>
+        <form id="calculadora">
+            <div class="form-group">
+                <label for="precioCacao">Precio por kg de cacao (Bs):</label>
+                <input type="number" id="precioCacao" required>
+                <label for="cantidadCacao">Cantidad de cacao (g):</label>
+                <input type="number" id="cantidadCacao" required>
+            </div>
+            <div class="form-group">
+                <label for="precioAzucar">Precio por kg de azúcar (Bs):</label>
+                <input type="number" id="precioAzucar" required>
+                <label for="cantidadAzucar">Cantidad de azúcar (g):</label>
+                <input type="number" id="cantidadAzucar" required>
+            </div>
+            <div class="form-group">
+                <label for="precioVainilla">Precio por litro de vainilla (Bs):</label>
+                <input type="number" id="precioVainilla" required>
+                <label for="cantidadVainilla">Cantidad de vainilla (ml):</label>
+                <input type="number" id="cantidadVainilla" required>
+            </div>
+            <div class="form-group">
+                <label for="precioLeche">Precio por litro de leche (Bs):</label>
+                <input type="number" id="precioLeche" required>
+                <label for="cantidadLeche">Cantidad de leche (ml):</label>
+                <input type="number" id="cantidadLeche" required>
+            </div>
+            <div class="form-group">
+                <label for="precioChocolate">Precio por barra de chocolate (Bs):</label>
+                <input type="number" id="precioChocolate" required>
+                <label for="cantidadChocolate">Cantidad de barras de chocolate (estimado):</label>
+                <input type="number" id="cantidadChocolate" required>
+            </div>
+            <div class="form-group">
+                <label for="precioLeche">Precio por kg de harina de trigo (Bs):</label>
+                <input type="number" id="precioLeche" required>
+                <label for="cantidadLeche">Cantidad de harina de trigo (g):</label>
+                <input type="number" id="cantidadLeche" required>
+            </div>
+            <button type="button" onclick="calcularCosto()">Calcular Costo</button>
+        </form>
+        <h2 id="resultado">Costo Total: </h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
